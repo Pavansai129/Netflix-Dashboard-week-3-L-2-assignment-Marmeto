@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/477f8f5772.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="home-page-container">
+      <header class="header-section">
+        <img
+          src="images/Netflix Logo.png"
+          alt="netflix logo"
+          class="website-logo"
+        />
+      </header>
+      <section class="home-page-banner-section">
+        <img
+          src="images/Home page Banner.png"
+          alt="Home page Banner"
+          class="home-page-banner"
+        />
+        <div class="home-page-banner-details-block">
+          <h1 class="banner-heading">John Wick 3 : Parabellum</h1>
+          <p class="banner-description">
+            John Wick is on the run after killing a member of the international
+            assassins' guild, and with a $14 million price tag on his head, he
+            is the target of hit men and women everywhere.
+          </p>
+          <button class="home-banner-section-watch-later-button">
+            <img
+              src="images/Play.png"
+              alt="play button image"
+              class="play-button"
+            /><span class="button-text">Watch trailer</span>
+          </button>
+        </div>
+      </section>
+      <section class="home-page-search-and-results-slider-section">
+        <div class="search-bar-block">
+          <div class="search-bar-and-search-icon-container">
+            <input
+              type="search"
+              placeholder="What do you want to watch?"
+              class="search-bar"
+              id="searchBox"
+            />
+            <div class="search-icon-container">
+              <i
+                class="fa-solid fa-magnifying-glass search-icon"
+                size="8px"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="searched-movie-results-block">
+          <div class="searched-movie-poster-container">  <img class="searched-movie-poster" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYL3RAXnzpp8lh38649v93_e5HiZr2sxwG4ltp3H4u24o_4nxT" alt="Cruella"/></div>
+          <div class="searched-movie-details-block-container">
+            <div class="searched-movie-details-container">
+              <h1 class="searchd-movie-title">Cruella</h1>
+              <p class="searched-movie-genre">
+                Animation, Action, Adventure, Fantasy, Drama
+              </p>
+              <p class="searched-movie-release-date-text">
+                Release Date:
+                <span class="searched-movie-release-date">12/08/2000</span>
+              </p>
+              <p class="searched-movie-overview">
+                In 1970s London amidst the punk rock revolution, a young grifter
+                named Estella is determined to make a name for herself with her
+                designs.She befriends a pair of young thieves who appreciate her
+                appetite for mischief, and together they are able to build a
+                life for themselves on the London streets.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="recommanded-movies-block">
+          <h1 class="movies-block-heading">Recommended Movies</h1>
+          <div class="recommanded-movies-slider-container">
+            <section id="recommendedMovies" class="splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="image01.jpg" alt="">
+                              <div>
+                                  Description 01
+                              </div>
+                          </li>
+              
+              
+                          <li class="splide__slide">
+                              <img src="image02.jpg" alt="">
+                              <div>
+                                  Description 02
+                              </div>
+                          </li>
+                      </ul>
+                </div>
+              </div>
+          </div>
+        <div class="favorites-list-block">
+          <h1 class="movies-block-heading">Recommended Movies</h1>
+          <div class="favorites-list-slider-container">
+            <section id="favoritesList" class="splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="image01.jpg" alt="">
+                              <div>
+                                  Description 01
+                              </div>
+                          </li>
+              
+              
+                          <li class="splide__slide">
+                              <img src="image02.jpg" alt="">
+                              <div>
+                                  Description 02
+                              </div>
+                          </li>
+                      </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
