@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .home-page-container {
@@ -25,7 +26,7 @@
 }
 .home-page-banner {
   width: 100%;
-  height: auto;
+  max-height: 200px;
 }
 .home-page-banner-section {
   position: relative;
@@ -34,7 +35,7 @@
   position: absolute;
   top: 30px;
   left: 20px;
-  width: 130px;
+  width: 40%;
 }
 .banner-heading {
   color: #fff;
@@ -49,7 +50,7 @@
   font-family: "DM Sans";
   font-size: 3px;
   font-style: normal;
-  width: 50%;
+  width: 60%;
   margin-bottom: 5px;
 }
 
@@ -78,7 +79,7 @@
 .home-page-search-and-results-slider-section {
   width: 100%;
   height: 300px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .search-bar-block {
@@ -86,6 +87,7 @@
   justify-content: center;
   align-items: center;
   height: 50px;
+  margin-bottom: 20px;
 }
 .search-bar-and-search-icon-container {
   width: 300px;
@@ -111,10 +113,14 @@
   justify-content: center;
   align-items: center;
 }
-
+.search-icon {
+  font-size: 15px;
+}
 .searched-movie-results-block {
   width: 100%;
   display: flex;
+  height: 100px;
+  overflow: hidden;
 }
 .searched-movie-poster-container {
   width: 50%;
@@ -122,36 +128,39 @@
 
 .searched-movie-poster {
   width: 100%;
+  height: 100%;
 }
 .searched-movie-details-block-container {
   width: 100%;
   flex-grow: 1;
   display: flex;
-  align-items: flex-end;
-  padding: 20px;
+  padding: 10px 20px;
 }
 .searched-movie-details-container {
-  width: 70%;
+  width: 100%;
+  overflow: hidden;
 }
 .searchd-movie-title {
   color: #000;
   font-family: "Roboto";
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 .searched-movie-genre {
   color: #b91c1c;
   font-family: Roboto;
-  font-size: 3px;
+  font-size: 6px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 5px;
 }
 .searched-movie-release-date-text {
   color: #000;
   font-family: Roboto;
-  font-size: 5px;
+  font-size: 6px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -159,7 +168,7 @@
 .searched-movie-release-date {
   color: #000;
   font-family: Roboto;
-  font-size: 4px;
+  font-size: 6px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -167,7 +176,7 @@
 .searched-movie-overview {
   color: #000;
   font-family: Roboto;
-  font-size: 4px;
+  font-size: 6px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -188,349 +197,87 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .header-section {
-    display: flex;
-    align-items: center;
-    padding: 0 60px;
-    height: 80px;
-    background: #000;
-  }
-  .website-logo {
-    height: 25px;
-  }
-  .home-page-banner {
-    width: 100%;
-    height: auto;
-  }
-  .home-page-banner-section {
-    position: relative;
-  }
-  .home-page-banner-details-block {
-    position: absolute;
-    top: 40px;
-    left: 60px;
-    width: 360px;
-  }
-  .banner-heading {
-    color: #fff;
-    font-family: "DM Sans";
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 5px;
-  }
-  .banner-description {
-    color: #fff;
-    font-family: "DM Sans";
-    font-size: 8px;
-    font-style: normal;
-    width: 50%;
-    margin-bottom: 5px;
-  }
-
-  .home-banner-section-watch-later-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    width: 100px;
-    height: 30px;
-    font-size: 10px;
-    color: #fff;
-    padding: 10px;
-    background: #be123c;
-    border: none;
-    border-radius: 4px;
-    object-fit: content;
-  }
-  .play-button {
-    width: 10px;
-  }
-  .button-text {
-    font-size: 10px;
-    color: #fff;
-  }
-  .home-page-search-and-results-slider-section {
-    width: 100%;
-    height: 500px;
-    padding: 60px;
-  }
-
-  .search-bar-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-  }
-  .search-bar-and-search-icon-container {
-    width: 300px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 4px;
-    border: 2px solid #b91c1c;
-  }
-  .search-bar {
-    flex-grow: 1;
-    outline: none;
-    border: none;
-    border-radius: 2px;
-    font-size: 10px;
-    padding: 2px 5px;
-  }
-  .search-icon-container {
-    width: 40px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .searched-movie-results-block {
-    width: 100%;
-    display: flex;
-  }
-  .searched-movie-poster-container {
-    width: 50%;
-    height: 100px;
-  }
-
-  .searched-movie-poster {
-    width: 100%;
-    height: 100%;
-  }
-  .searched-movie-details-block-container {
-    width: 30%;
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-  }
-  .searchd-movie-title {
-    color: #000;
-    font-family: "Roboto";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .searched-movie-genre {
-    color: #b91c1c;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .searched-movie-release-date-text {
-    color: #000;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .searched-movie-release-date {
-    color: #000;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .searched-movie-overview {
-    color: #000;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .movies-block-heading {
-    margin-top: 5px;
-    color: #000;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-
-  .recommanded-movies-slider-container {
-    width: 100%;
-  }
+.slide-image {
+  width: 100%;
+  max-height: 200px;
 }
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .header-section {
-    display: flex;
-    align-items: center;
-    padding: 0 200px;
-    height: 80px;
-    background: #000;
-  }
-  .website-logo {
-    height: 40px;
-  }
-  .home-page-banner {
-    width: 100%;
-    height: auto;
-  }
-  .home-page-banner-section {
-    position: relative;
-  }
-  .home-page-banner-details-block {
-    position: absolute;
-    top: 300px;
-    left: 200px;
-    width: 600px;
-  }
-  .banner-heading {
-    color: #fff;
-    font-family: "DM Sans";
-    font-size: 72px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 5px;
-  }
-  .banner-description {
-    color: #fff;
-    font-family: "DM Sans";
-    font-size: 30px;
-    font-style: normal;
-    width: 50%;
-    margin-bottom: 5px;
-  }
 
-  .home-banner-section-watch-later-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    width: 250px;
-    height: 60px;
-    font-size: 4px;
-    color: #fff;
-    padding: 16px;
-    background: #be123c;
-    border: none;
-    border-radius: 4px;
-    object-fit: content;
-  }
-  .play-button {
-    width: 28px;
-  }
-  .button-text {
-    font-size: 20px;
-    color: #fff;
-  }
-  .home-page-search-and-results-slider-section {
-    width: 100%;
-    height: 500px;
-    padding: 200px;
-  }
+.splide__Slide {
+  border: 1px solid red;
+}
+.slide-data-container {
+  position: relative;
+}
+.slide-favourite-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(243, 244, 246, 0.5);
+}
+.favorite-icon {
+  font-size: 10px;
+  color: #d1d5db;
+}
+.fill-icon {
+  color: #ff0000;
+}
+.slide-title {
+  color: #111827;
+  font-family: "DM Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.slide-genre {
+  color: #9ca3af;
+  font-family: "DM Sans";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  word-wrap: break-word;
+}
 
-  .search-bar-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-  }
-  .search-bar-and-search-icon-container {
-    width: 300px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 4px;
-    border: 2px solid #b91c1c;
-  }
-  .search-bar {
-    flex-grow: 1;
-    outline: none;
-    border: none;
-    border-radius: 2px;
-    font-size: 10px;
-    padding: 2px 5px;
-  }
-  .search-icon-container {
-    width: 40px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .searched-movie-results-block {
-    width: 100%;
-    display: flex;
-  }
-  .searched-movie-poster-container {
-    width: 50%;
-    height: 100px;
-  }
+.favorites-list-heading-and-sorting-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  .searched-movie-poster {
-    width: 100%;
-    height: 100%;
-  }
-  .searched-movie-details-block-container {
-    width: 30%;
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-  }
-  .searchd-movie-title {
-    color: #000;
-    font-family: "Roboto";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .searched-movie-genre {
-    color: #b91c1c;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .searched-movie-release-date-text {
-    color: #000;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .searched-movie-release-date {
-    color: #000;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .searched-movie-overview {
-    color: #000;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .movies-block-heading {
-    margin-top: 5px;
-    color: #000;
-    font-family: "DM Sans";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
+.favorites-list-block-sort-options {
+  border: none;
+  object-fit: content;
+  color: #be123c;
+  font-family: "DM Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+}
 
-  .recommanded-movies-slider-container {
-    width: 100%;
-  }
+.splide__arrows .splide__arrow {
+  background: none;
+  color: #6b7280 !important;
+  font-size: 10px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40% !important;
+  font-weight: 100;
+}
+
+.splide__arrows .splide__arrow--prev {
+  left: -30px;
+}
+
+.splide__arrows .splide__arrow--next {
+  right: -30px;
 }

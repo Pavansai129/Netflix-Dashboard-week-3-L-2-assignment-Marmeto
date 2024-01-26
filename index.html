@@ -61,8 +61,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             />
             <div class="search-icon-container">
               <i
-                class="fa-solid fa-magnifying-glass search-icon"
-                size="8px"
+                class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"
               ></i>
             </div>
           </div>
@@ -92,47 +91,30 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="recommanded-movies-block">
           <h1 class="movies-block-heading">Recommended Movies</h1>
           <div class="recommanded-movies-slider-container">
-            <section id="recommendedMovies" class="splide" aria-label="Beautiful Images">
+            <section id="recommendedMoviesSplide" class="splide" aria-label="Beautiful Images">
                 <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">
-                              <img src="image01.jpg" alt="">
-                              <div>
-                                  Description 01
-                              </div>
-                          </li>
-              
-              
-                          <li class="splide__slide">
-                              <img src="image02.jpg" alt="">
-                              <div>
-                                  Description 02
-                              </div>
-                          </li>
+                      <ul id="recommendedMovies" class="splide__list">
+
                       </ul>
                 </div>
               </div>
           </div>
         <div class="favorites-list-block">
-          <h1 class="movies-block-heading">Recommended Movies</h1>
+            <div class="favorites-list-heading-and-sorting-block">
+
+                <h1 class="movies-block-heading">Favorites List</h1>
+                <select name="sortFavoriteList" id="sortFavoriteList" class="favorites-list-block-sort-options">
+                    <option value="Sort by">Sort</option>
+                    <option value="Title Asc">Title Asc</option>
+                    <option value="Title Desc">Title Desc</option>
+                    <option value="Release Date Asc">Release Date Asc</option>
+                    <option value="Release Date Desc">Release Date Desc</option>
+                </select>
+            </div>
           <div class="favorites-list-slider-container">
-            <section id="favoritesList" class="splide" aria-label="Beautiful Images">
+            <section id="favoritesListSplide" class="splide" aria-label="Beautiful Images">
                 <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">
-                              <img src="image01.jpg" alt="">
-                              <div>
-                                  Description 01
-                              </div>
-                          </li>
-              
-              
-                          <li class="splide__slide">
-                              <img src="image02.jpg" alt="">
-                              <div>
-                                  Description 02
-                              </div>
-                          </li>
+                      <ul class="splide__list" id="favoritesList">
                       </ul>
                 </div>
               </div>
