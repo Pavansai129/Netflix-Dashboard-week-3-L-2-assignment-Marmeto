@@ -64,37 +64,37 @@ let favoritesList = storedData;
 function renderSearchedMovie(movie, genres) {
   const { title, poster_path, release_date, overview } = movie;
   searchedMovieResultsBlockEl.innerHTML = `
-  <div class="searched-movie-poster-container">
-  <img class="searched-movie-poster" src=https://image.tmdb.org/t/p/w500/${poster_path} alt=${title} />
-        </div>
-          <div class="searched-movie-details-block-container">
-            <div class="searched-movie-details-container">
-              <h1 class="searchd-movie-title">${title}</h1>
-              <p class="searched-movie-genre">
-                ${genres}
-              </p>
-              <p class="searched-movie-release-date-text">
-                Release Date:
-                ${release_date}
-              </p>
-              <p class="searched-movie-overview">
-                ${overview}
-              </p>
-            </div>
+    <div class="searched-movie-poster-container">
+    <img class="searched-movie-poster" src=https://image.tmdb.org/t/p/w500/${poster_path} alt=${title} />
           </div>
-        `;
+            <div class="searched-movie-details-block-container">
+              <div class="searched-movie-details-container">
+                <h1 class="searchd-movie-title">${title}</h1>
+                <p class="searched-movie-genre">
+                  ${genres}
+                </p>
+                <p class="searched-movie-release-date-text">
+                  Release Date:
+                  ${release_date}
+                </p>
+                <p class="searched-movie-overview">
+                  ${overview}
+                </p>
+              </div>
+            </div>
+          `;
 }
 
 function updateMoviesDataLists(data) {
   let movieObj = favoritesList.find((each) => each.id === data.id);
   if (!movieObj) {
-    favoritesList.push(data);
+    favoritesList.unshift(data);
     let filteredRecommendedMoviesList = recommendedMoviesList.filter(
       (each) => each.id !== data.id
     );
     recommendedMoviesList = filteredRecommendedMoviesList;
   } else {
-    recommendedMoviesList.push(data);
+    recommendedMoviesList.unshift(data);
     let filteredFavoritesList = favoritesList.filter(
       (each) => each.id !== data.id
     );
