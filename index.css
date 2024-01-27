@@ -35,7 +35,6 @@
   position: absolute;
   top: 30px;
   left: 20px;
-  width: 40%;
 }
 .banner-heading {
   color: #fff;
@@ -48,9 +47,9 @@
 .banner-description {
   color: #fff;
   font-family: "DM Sans";
-  font-size: 3px;
+  font-size: 5px;
   font-style: normal;
-  width: 60%;
+  width: 100px;
   margin-bottom: 5px;
 }
 
@@ -58,10 +57,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1px;
-  width: 35px;
-  height: 10px;
-  font-size: 3px;
+  gap: 2px;
+  width: 45px;
+  height: 12px;
+  font-size: 8px;
   color: #fff;
   padding: 2px;
   background: #be123c;
@@ -70,15 +69,14 @@
   object-fit: content;
 }
 .play-button {
-  width: 6px;
+  width: 8px;
 }
 .button-text {
-  font-size: 3px;
+  font-size: 4px;
   color: #fff;
 }
 .home-page-search-and-results-slider-section {
   width: 100%;
-  height: 300px;
   padding: 10px 20px;
 }
 
@@ -123,7 +121,7 @@
   overflow: hidden;
 }
 .searched-movie-poster-container {
-  width: 50%;
+  width: 120px;
 }
 
 .searched-movie-poster {
@@ -134,11 +132,11 @@
   width: 100%;
   flex-grow: 1;
   display: flex;
-  padding: 10px 20px;
+  padding: 0 20px;
+  height: fit-content;
 }
 .searched-movie-details-container {
   width: 100%;
-  overflow: hidden;
 }
 .searchd-movie-title {
   color: #000;
@@ -146,21 +144,21 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 .searched-movie-genre {
   color: #b91c1c;
   font-family: Roboto;
-  font-size: 6px;
+  font-size: 7px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 .searched-movie-release-date-text {
   color: #000;
   font-family: Roboto;
-  font-size: 6px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -168,7 +166,7 @@
 .searched-movie-release-date {
   color: #000;
   font-family: Roboto;
-  font-size: 6px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -176,7 +174,7 @@
 .searched-movie-overview {
   color: #000;
   font-family: Roboto;
-  font-size: 6px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -213,7 +211,7 @@
   height: 20px;
   border: none;
   border-radius: 50%;
-  background: rgba(243, 244, 246, 0.5);
+  background: rgba(243, 244, 246, 0.4);
 }
 .favorite-icon {
   font-size: 10px;
@@ -225,7 +223,7 @@
 .slide-title {
   color: #111827;
   font-family: "DM Sans";
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -235,7 +233,7 @@
 .slide-genre {
   color: #9ca3af;
   font-family: "DM Sans";
-  font-size: 8px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -245,6 +243,7 @@
 .favorites-list-heading-and-sorting-block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -258,6 +257,7 @@
   font-weight: 400;
   line-height: 24px;
   outline: none;
+  background: transparent;
 }
 
 .splide__arrows .splide__arrow {
@@ -277,4 +277,291 @@
 
 .splide__arrows .splide__arrow--next {
   right: -30px;
+}
+@media screen and (min-width: 768px) {
+  .header-section {
+    padding: 20px 60px;
+    height: 60px;
+  }
+  .website-logo {
+    height: 30px;
+  }
+  .home-page-banner {
+    width: 100%;
+    max-height: 500px;
+  }
+  .home-page-banner-section {
+    position: relative;
+  }
+  .home-page-banner-details-block {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+  }
+  .banner-heading {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .banner-description {
+    font-size: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  .home-banner-section-watch-later-button {
+    width: 100px;
+    height: 35px;
+  }
+  .play-button {
+    width: 16px;
+  }
+  .button-text {
+    font-size: 10px;
+    color: #fff;
+  }
+  .home-page-search-and-results-slider-section {
+    width: 100%;
+    padding: 10px 60px;
+  }
+
+  .search-bar-block {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .search-bar-and-search-icon-container {
+    height: 35px;
+  }
+  .search-bar {
+    font-size: 12px;
+  }
+  .search-icon-container {
+    width: 30px;
+  }
+  .search-icon {
+    font-size: 16px;
+  }
+  .searched-movie-results-block {
+    height: 150px;
+  }
+  .searched-movie-poster-container {
+    width: 200px;
+  }
+  .searched-movie-details-block-container {
+    padding: 0 30px;
+  }
+  .searched-movie-details-container {
+    width: 100%;
+  }
+  .searchd-movie-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .searched-movie-genre {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .searched-movie-release-date-text {
+    font-size: 14px;
+  }
+  .searched-movie-release-date {
+    font-size: 14px;
+  }
+  .searched-movie-overview {
+    font-size: 14px;
+  }
+  .movies-block-heading {
+    margin-top: 18px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .recommanded-movies-slider-container {
+    width: 100%;
+  }
+
+  .slide-image {
+    width: 100%;
+    max-height: 300px;
+  }
+  .slide-favourite-button {
+    top: 12px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+  }
+  .favorite-icon {
+    font-size: 15px;
+  }
+  .fill-icon {
+    color: #ff0000;
+  }
+  .slide-title {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .slide-genre {
+    font-size: 12px;
+  }
+
+  .favorites-list-block-sort-options {
+    font-size: 12px;
+  }
+
+  .splide__arrows .splide__arrow {
+    color: #6b7280 !important;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    top: 40% !important;
+  }
+
+  .splide__arrows .splide__arrow--prev {
+    left: -40px;
+  }
+
+  .splide__arrows .splide__arrow--next {
+    right: -40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header-section {
+    padding: 30px 80px;
+    height: 100px;
+  }
+  .website-logo {
+    height: 50px;
+  }
+  .home-page-banner {
+    width: 100%;
+    max-height: 600px;
+  }
+  .home-page-banner-section {
+    position: relative;
+  }
+  .home-page-banner-details-block {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+  }
+  .banner-heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .banner-description {
+    font-size: 20px;
+    width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .home-banner-section-watch-later-button {
+    width: 250px;
+    height: 45px;
+    gap: 20px;
+  }
+  .play-button {
+    width: 30px;
+  }
+  .button-text {
+    font-size: 22px;
+  }
+  .home-page-search-and-results-slider-section {
+    width: 100%;
+    padding: 10px 60px;
+  }
+
+  .search-bar-block {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .search-bar-and-search-icon-container {
+    height: 45px;
+    width: 500px;
+    padding: 0 20px;
+  }
+  .search-bar {
+    font-size: 22px;
+  }
+  .search-icon-container {
+    width: 30px;
+  }
+  .search-icon {
+    font-size: 20px;
+  }
+  .searched-movie-results-block {
+    height: 300px;
+  }
+  .searched-movie-poster-container {
+    width: 500px;
+  }
+  .searched-movie-details-block-container {
+    padding: 0 30px;
+  }
+  .searched-movie-details-container {
+    width: 100%;
+  }
+  .searchd-movie-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .searched-movie-genre {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .searched-movie-release-date-text,
+  .searched-movie-release-date,
+  .searched-movie-overview {
+    font-size: 26px;
+  }
+  .movies-block-heading {
+    margin-top: 18px;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .recommanded-movies-slider-container {
+    width: 100%;
+  }
+
+  .slide-image {
+    width: 100%;
+    max-height: 400px;
+  }
+  .slide-favourite-button {
+    top: 12px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  .favorite-icon {
+    font-size: 18px;
+  }
+  .slide-title {
+    font-size: 24px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .slide-genre {
+    font-size: 20px;
+  }
+
+  .favorites-list-block-sort-options {
+    font-size: 22px;
+  }
+
+  .splide__arrows .splide__arrow {
+    color: #6b7280 !important;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    top: 40% !important;
+  }
+
+  .splide__arrows .splide__arrow--prev {
+    left: -40px;
+  }
+
+  .splide__arrows .splide__arrow--next {
+    right: -40px;
+  }
 }

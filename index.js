@@ -1,14 +1,26 @@
 var recommendedMoviesSlider = new Splide("#recommendedMoviesSplide", {
   perPage: 2,
   type: "loop",
-  gap: "10px",
+  gap: 10,
   pagination: false,
+  breakpoints: {
+    426: { perPage: 2, gap: "10px" },
+    769: { perPage: 4, gap: "10px" },
+    1025: { perPage: 5, gap: "10px" },
+    1441: { perPage: 5, gap: "10px" },
+  },
 });
 var favoritesListSlider = new Splide("#favoritesListSplide", {
   perPage: 2,
   type: "slide",
-  gap: "10px",
+  gap: 10,
   pagination: false,
+  breakpoints: {
+    426: { perPage: 2, gap: "10px" },
+    769: { perPage: 4, gap: "10px" },
+    1025: { perPage: 5, gap: "10px" },
+    1441: { perPage: 5, gap: "10px" },
+  },
 });
 
 const searchIconEl = document.querySelector("#searchIcon");
@@ -148,10 +160,13 @@ function renderCurousel(data, curouselEl, splide) {
     }
     slideFavouriteButtonEl.appendChild(slideFavoriteButtonIconEl);
 
+    const slideDetailsContainerEl = document.createElement("div");
+    slideDataContainerEl.appendChild(slideDetailsContainerEl);
+
     const slideTitleEl = document.createElement("h3");
     slideTitleEl.textContent = eachMovieData.original_title;
     slideTitleEl.classList.add("slide-title");
-    slideDataContainerEl.appendChild(slideTitleEl);
+    slideDetailsContainerEl.appendChild(slideTitleEl);
     let genres = "";
     function assignGenres(genre) {
       genres = genre;
@@ -174,7 +189,7 @@ function renderCurousel(data, curouselEl, splide) {
       const slideGenreEl = document.createElement("p");
       slideGenreEl.textContent = genres.toString();
       slideGenreEl.classList.add("slide-genre");
-      slideDataContainerEl.appendChild(slideGenreEl);
+      slideDetailsContainerEl.appendChild(slideGenreEl);
       assignGenres();
     }
     getGenres(eachMovieData.original_title);
