@@ -1,5 +1,5 @@
 var recommendedMoviesSlider = new Splide("#recommendedMoviesSplide", {
-  perPage: 2,
+  perPage: 5,
   type: "loop",
   gap: 10,
   pagination: false,
@@ -7,11 +7,10 @@ var recommendedMoviesSlider = new Splide("#recommendedMoviesSplide", {
     426: { perPage: 2, gap: "10px" },
     769: { perPage: 4, gap: "10px" },
     1025: { perPage: 5, gap: "10px" },
-    1441: { perPage: 5, gap: "10px" },
   },
 });
 var favoritesListSlider = new Splide("#favoritesListSplide", {
-  perPage: 2,
+  perPage: 5,
   type: "slide",
   gap: 10,
   pagination: false,
@@ -19,7 +18,6 @@ var favoritesListSlider = new Splide("#favoritesListSplide", {
     426: { perPage: 2, gap: "10px" },
     769: { perPage: 4, gap: "10px" },
     1025: { perPage: 5, gap: "10px" },
-    1441: { perPage: 5, gap: "10px" },
   },
 });
 
